@@ -1,7 +1,7 @@
 @charset "UTF-8";
 /*!
  * CoreUI - Open Source Dashboard UI Kit
- * @version v2.0.4
+ * @version v2.0.6
  * @link https://coreui.io
  * Copyright (c) 2018 creativeLabs Łukasz Holeczek
  * Licensed under MIT (https://coreui.io/license)
@@ -9868,6 +9868,133 @@ body {
 
 .app-header .navbar-nav .dropdown-menu-right {
   right: auto; }
+
+.nav-link-themeBlue {
+  background: #506aa0 !important; }
+  .nav-link-themeBlue:hover {
+    background: #3b5998 !important; }
+
+.sidebar .nav-link.nav-link-themeBlue .nav-icon {
+  color: #fff !important;
+  opacity: 0.7; }
+
+.secretH2 {
+  color: blueviolet;
+  margin: 1rem 1rem 1rem 0; }
+
+.styleZone {
+  background: #fff;
+  position: relative;
+  width: 800px;
+  height: 250px;
+  border-width: 2px;
+  border-color: #666666;
+  border-style: dashed;
+  border-radius: 5px; }
+  .styleZone p {
+    margin: 8px 0 0 0;
+    text-align: center;
+    font-size: 0.75rem; }
+  .styleZone figure {
+    margin: 1rem 0 0 0;
+    font-size: 7rem;
+    text-align: center; }
+
+.fileList li {
+  list-style: none;
+  padding: 1rem 1rem 1rem 1rem;
+  margin: 0 0 1rem -2.5rem;
+  background: #d3cecd;
+  border-radius: 8px; }
+
+.previewer {
+  height: 72px;
+  width: 72px; }
+  .previewer:hover {
+    animation-name: expand;
+    animation-duration: 0.25s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    height: 144px;
+    width: 144px; }
+
+@keyframes expand {
+  from {
+    height: 72px;
+    width: 72px; }
+  to {
+    height: 488px;
+    width: 488px;
+    background-color: blue; } }
+
+.backgroundImage {
+  height: 80vh;
+  background-size: cover; }
+  .backgroundImage h2 {
+    text-align: center;
+    padding: 8rem 0 0 0; }
+  .backgroundImage h3 {
+    text-align: center;
+    padding: 3rem 0 3rem 0; }
+  .backgroundImage h2, .backgroundImage h3 {
+    font-size: 42px;
+    font-weight: 900;
+    text-shadow: 0 0 10px black;
+    color: #FFF; }
+  .backgroundImage footer {
+    text-align: center;
+    margin-top: 2rem;
+    margin-bottom: auto; }
+  .backgroundImage a {
+    font-size: 24px;
+    text-align: center;
+    border-radius: 10px;
+    border: black solid 0px;
+    padding: 0.75em 2.5em 0.75em 2.5em;
+    color: #fff !important;
+    text-decoration: none;
+    background-color: #e7442c !important; }
+    .backgroundImage a:hover {
+      cursor: pointer; }
+
+.container-registratie {
+  background-color: white;
+  padding: 2rem;
+  border: 1px solid #CCC;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.2);
+  margin: 0 0 1rem 0; }
+  .container-registratie input {
+    border-radius: 6px;
+    border: #8080807d 1px solid;
+    width: -webkit-fill-available; }
+  .container-registratie select {
+    border-radius: 6px;
+    border: #8080807d 1px solid;
+    width: -webkit-fill-available; }
+  .container-registratie p {
+    color: grey;
+    margin: 0 0 1rem 0; }
+  .container-registratie label {
+    padding: 1rem 0 0.25rem 0;
+    display: block; }
+  .container-registratie .label-anoniem {
+    display: inline; }
+  .container-registratie .mx-1 {
+    padding: 11px 0 0 0;
+    display: inline-block; }
+    .container-registratie .mx-1 .switch-3d .switch-slider {
+      background-color: lightslategrey; }
+  .container-registratie .button-container {
+    text-align: right; }
+  .container-registratie button {
+    margin: 1rem 0 0rem 0;
+    font-size: 26px;
+    font-weight: 300;
+    padding: 10px 10px 10px 10px;
+    color: whitesmoke;
+    border-radius: 6px;
+    border: none 0px black;
+    background-color: orangered; }
 
 html body .app.flex-row.align-items-center {
   height: 100vh; }

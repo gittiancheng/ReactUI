@@ -182,6 +182,42 @@ const User = Loadable({
   loading: Loading,
 });
 
+const Secret = Loadable({
+  loader: () => import('./views/Secret/Secret'),
+  loading: Loading,
+});
+
+const Uitleg = Loadable({
+  loader: () => import('./views/Demo/Uitleg'),
+  loading: Loading,
+});
+
+const Gegevens = Loadable({
+  loader: () => import('./views/Demo/Gegevens'),
+  loading: Loading,
+});
+
+const BelevingsKwaliteit = Loadable({
+  loader: () => import('./views/Demo/BelevingsKwaliteit'),
+  loading: Loading,
+});
+
+const Feedback = Loadable({
+  loader: () => import('./views/Demo/Feedback'),
+  loading: Loading,
+});
+
+const Uitloggen = Loadable({
+  loader: () => import('./views/Demo/Uitloggen'),
+  loading: Loading,
+});
+
+const Startscherm = Loadable({
+  loader: () => import('./views/Demo/Startscherm'),
+  loading: Loading,
+});
+
+
 
 
 // https://github.com/ReactTraining/react-router/tree/master/packages/react-router-config
@@ -227,6 +263,14 @@ const routes = [
   { path: '/charts', name: 'Charts', component: Charts },
   { path: '/users', exact: true,  name: 'Users', component: Users },
   { path: '/users/:id', exact: true, name: 'User Details', component: User },
+  { path: '/secret', exact: true, name: 'secret information', component: Secret },
+  { path: '/uitleg', exact: true, name: 'uitleg', component: Uitleg },
+  { path: '/gegevens', exact: true, name: 'gegevens', component: Gegevens },
+  { path: '/belevingskwaliteit', exact: true, name: 'belevingskwaliteit', component: BelevingsKwaliteit },
+  { path: '/feedback', exact: true, name: 'feedback', component: Feedback },
+  { path: '/uitloggen', exact: true, name: 'uitloggen', component: Uitloggen },
+  { path: '/startscherm', exact: true, name: 'startscherm', component: Startscherm },
+
 ];
 
 export default routes;

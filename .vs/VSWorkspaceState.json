@@ -1,0 +1,16 @@
+{
+  "ExpandedNodes": [
+    "",
+    "\\demoView",
+    "\\demoView\\component",
+    "\\demoView\\component\\formulier",
+    "\\src",
+    "\\src\\containers",
+    "\\src\\views",
+    "\\src\\views\\Base",
+    "\\src\\views\\Base\\Switches",
+    "\\src\\views\\Demo"
+  ],
+  "SelectedNode": "\\src\\views\\Demo\\Formulier.js",
+  "PreviewInSolutionExplorer": false
+}

@@ -461,7 +461,7 @@ class Switches extends Component {
                       Normal
                     </td>
                     <td>
-                      <AppSwitch className={'mx-1'} variant={'3d'} color={'primary'} checked  />
+                        <AppSwitch className={'mx-1'} variant={'3d'} color={'primary'} checked={false}  />
                     </td>
                     <td>
                       -

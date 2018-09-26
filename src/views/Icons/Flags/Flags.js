@@ -4,7 +4,7 @@ import { Card, CardBody, CardHeader, Col, Row } from 'reactstrap';
 class Flags extends Component {
   render() {
     return (
-      <div className="animated fadeIn">
+      <div className="animated fadeIn ">
         <Card>
           <CardHeader>
             <i className="fa fa-font-awesome"></i> Flags
