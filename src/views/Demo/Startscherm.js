@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import BackgroundImage from './bg-demo.jpg';
+import { Redirect, Route, Switch, Link } from 'react-router-dom';
 
 const styles = {
   home: {
@@ -20,9 +21,10 @@ class Startscherm extends Component {
               <h3>Draag bij aan de verbetering van uw leefomgeving</h3>
                     </header>
             <footer>
-              <div className="textForButtonsMenu"></div>
-              <a className="button scrolly horizontalScrollerMain doemee">Doe mee!</a>
-
+            <div className="textForButtonsMenu"></div>
+              <Link to="/gegevens"
+                className="button scrolly horizontalScrollerMain doemee"
+              >Doe mee!</Link>
             </footer>
                 </div>
             </section>

@@ -6,39 +6,44 @@ export default {
       icon: 'icon-speedometer',
       badge: {
         variant: 'info',
-        text: 'NEW',
+        text: 'NEW'
       },
     },
     
     {
       name: 'Startscherm',
       url: '/startscherm',
-      icon: 'icon-home',
+      icon: 'icon-home'
     },
     {
       name: 'Gegevens',
       url: '/gegevens',
-      icon: 'icon-user',
+      icon: 'icon-user'
     },
     {
       name: 'Uitleg',
       url: '/uitleg',
-      icon: 'icon-question',
+      icon: 'icon-question'
     },
     {
       name: 'Belevingskwaliteit',
       url: '/belevingskwaliteit',
-      icon: 'icon-speedometer',
+      icon: 'icon-speedometer'
     },
     {
       name: 'Feedback',
       url: '/feedback',
-      icon: 'fa fa-commenting-o',
+      icon: 'fa fa-commenting-o'
     },
     {
       name: 'Uitloggen',
       url: '/uitloggen',
-      icon: 'fa fa-sign-out',
+      icon: 'fa fa-sign-out'
     },
+    {
+      name: 'dropzone',
+      url: '/secret',
+      icon: 'fa fa-upload'
+    }
   ],
 };
