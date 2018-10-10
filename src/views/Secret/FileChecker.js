@@ -1,42 +1,65 @@
-
-
-var upload = [5, 1, 12, 8, 130, 44];
-var exist = [44, 1, 2, 4, 6, 10, 100];
-
-let accept = [];
-let decline = [];
-
-for (t = 0; t < upload.length; t++) {
-    //console.log("loop ",t,upload[t]) 
-    let dupe = exist.find(file => file === upload[t])
-    if (dupe !== undefined) {
-        decline.push(upload[t]);
-        console.log('a dupe file!', upload[t])
+//pure function
+function checker(a, b) {
+  if (a.name === b.name) {
+    if (a.size === b.size) {
+      if (a.type === b.type) {
+        if (a.lastModified === b.lastModified) {
+          return b;
+        } else {
+          return false;
+        }
+      } else {
+        return false;
+      }
     } else {
-        accept.push(upload[t]);
+      return false;
     }
-    //console.log(exist[t],'compared with',upload[t],' result ',dupe);
+  } else {
+    return false;
+  }
 }
 
-let nExist = exist.concat(accept);
+//var upload = [5, 1, 12, 8, 130, 44];
+//var exist = [44, 1, 2, 4, 6, 10, 100];
+var upload = [{
+  name: "test",
+  size: 400,
+  type: "png",
+  lastModified: "today"
+}];
+var exist = [{
+  name: "test",
+  size: 400,
+  type: "png",
+  lastModified: "today"
+}];
+
+let accepted = [];
+let declined = [];
+
+for (t = 0; t < upload.length; t++) {
+  //let dupe = exist.find(file => file === upload[t]);
+  let duplicate = exist.find(file => checker(file, upload[t]));
+  console.log('file ', duplicate);
+    if (duplicate !== undefined) {
+      declined.push(upload[t]);
+      console.log('a dupe file!', upload[t].name);
+    } else {
+      accepted.push(upload[t]);
+    }
+}
+
+let nExist = exist.concat(accepted);
 var obj = {
-    accepted: accept,
-    decline: decline,
-    concated: nExist,
+  accepted: accepted,
+  declined: declined,
+  concated: nExist
 };
 
-console.log(obj)
-
-//var found = upload.includes();
-//console.log(found);
-
-
-
-console.log("rejected: ", decline);
-console.log("accepted: ", accept);
+console.log("rejected: ", declined);
+console.log("accepted: ", accepted);
 console.log("start: ", exist);
 console.log("After: ", nExist);
-// expected output: 12
-console.log(obj.accepted)
-alert(obj.decline)
-
+console.log("/n/n/n",obj);
+console.log(obj.accepted);
+//alert(obj.decline);
